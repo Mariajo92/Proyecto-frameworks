@@ -1,10 +1,9 @@
 /* Bienvenidos  */
 .bienvenidos {
   position: relative;
-  width: 390px;
-  height: 844px;
-
-  background: #ffffff;
+  width: 383px;
+  height: 536px;
+  align-items: center;
 }
 
 /* bg */
@@ -43,33 +42,13 @@
 
 /* btn */
 .btn {
-  position: absolute;
+  margin-left: 40px;
   width: 308px;
   height: 59px;
-  left: 41px;
-  top: 676px;
-}
-
-/* Rectangle 1 */
-.rectangle1 {
-  position: absolute;
-  width: 308px;
-  height: 58px;
-  left: calc(50% - 308px / 2);
-  top: 676px;
-
-  background: #00e530;
+  background-color: #00e530;
+  border: none;
   border-radius: 40px;
-}
-
-/* Log in */
-.login {
-  position: absolute;
-  width: 208px;
-  height: 48px;
-  left: calc(50% - 208px / 2);
-  top: 687px;
-
+  opacity: 0.5;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -79,13 +58,28 @@
 
   color: #ffffff;
 }
+.btn:hover {
+  opacity: 1;
+  color: #ffffff;
+  cursor: pointer;
+}
 
+/* Rectangle 1 */
+.rectangle1 {
+  position: absolute;
+  width: 100%;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 676px;
+}
 /* crear cuenta */
 .crearcuenta {
   position: absolute;
   width: 230px;
   height: 54px;
-  left: 80px;
+  left: 120px;
   top: 755px;
 
   font-family: "Nunito";
@@ -97,4 +91,7 @@
   text-decoration-line: underline;
 
   color: #ffffff;
+}
+.crearcuenta:hover {
+  cursor: pointer;
 }
