@@ -1,0 +1,267 @@
+/* informe */
+.informe{
+position: relative;
+width: 390px;
+height: 844px;
+
+background: #F5F5F8;
+
+}
+/* Rectangle 2 */
+.rectanguloin2{
+position: absolute;
+width: 342px;
+height: 628px;
+left: calc(50% - 342px/2 + 2px);
+top: 182px;
+
+background: #FFFFFF;
+border-radius: 40px;
+}
+
+/* APP Registro de gastos */
+.appinf{
+position: absolute;
+width: 285px;
+height: 70px;
+left: 60px;
+top: 38px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* informe */
+.informe2{
+position: absolute;
+width: 285px;
+height: 70px;
+left: 60px;
+top: 204px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Categoria */
+.cateinf{
+position: absolute;
+width: 285px;
+height: 70px;
+left: 0px;
+top: 288px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Categoria */
+.cateinf2{
+position: absolute;
+width: 285px;
+height: 70px;
+left: 0px;
+top: 288px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Component 2 */
+
+/* Auto layout */
+.component2inf{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 9px 0px;
+gap: 10px;
+
+position: absolute;
+width: 84.5px;
+height: 85px;
+left: 8px;
+top: 19px;
+
+background: #F5F5F8;
+}
+
+/* menu-sharp */
+
+/* Auto layout */
+.menuinf{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+width: 84.5px;
+height: 67px;
+}
+
+/* Inside auto layout */
+.insideinf{
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Vector */
+.vectorinf{
+width: 52.5px;
+height: 35px;
+
+background: #000000;
+}
+/* Inside auto layout */
+.insideinf2{
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Rectangle 7 */
+.rectanguloinf7{
+box-sizing: border-box;
+
+position: absolute;
+width: 216px;
+height: 50px;
+left: 91px;
+top: 359px;
+
+background: #FFFFFF;
+border: 3px solid #000000;
+}
+
+/* btn */
+.btninf{
+position: absolute;
+width: 308px;
+height: 59px;
+left: 41px;
+top: 717px;
+}
+
+
+/* Rectangle 1 */
+.rectanguloin1{
+position: absolute;
+width: 308px;
+height: 58px;
+left: calc(50% - 308px/2);
+top: 717px;
+
+background: #00E530;
+border-radius: 40px;
+}
+
+/* Buscar */
+.buscarinf{
+position: absolute;
+width: 208px;
+height: 48px;
+left: calc(50% - 208px/2);
+top: 728px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+/* chevron-down-circle-sharp */
+.circleinf{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 249px;
+top: 359px;
+}
+
+
+/* Vector */
+.vectorinf{
+position: absolute;
+left: 9.38%;
+right: 9.38%;
+top: 9.38%;
+bottom: 9.38%;
+
+background: #000000;
+}
+
+/* selccione */
+.seleccion{
+position: absolute;
+width: 128px;
+height: 28px;
+left: 96px;
+top: 376px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Frame 13 */
+.frameinf13{
+position: absolute;
+width: 50px;
+height: 69px;
+left: 318px;
+top: 19px;
+
+background: #F5F5F8;
+}
+
+/* image 2 */
+.imageinf{
+position: absolute;
+width: 50px;
+height: 39.52px;
+left: 0px;
+top: 21px;
+
+background: url(image.png);
+}
