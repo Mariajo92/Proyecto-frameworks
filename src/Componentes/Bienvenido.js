@@ -2,16 +2,17 @@ import "../Estilos/bienvenido.css";
 
 export const Bienvenido = () => {
   return (
-    <div className="bg">
+    <div className="bienvenidos">
+      <div className="bg"></div>
       <div className="appreg">
-        <h1 className="appreg">APP Registro de gastos</h1>
+        APP <br />
+        Registro de gastos
       </div>
-      <div className="rectangle1">
-        <button className="btn">Log in</button>
+      <div className="btn">
+        <div className="rectangle"></div>
+        <div className="login">Log in </div>
       </div>
-      <div className="crearcuenta">
-        <h4>Crear cuenta</h4>
-      </div>
+      <div className="crearcuenta">crear cuenta </div>
     </div>
   );
 };
