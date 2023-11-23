@@ -1,10 +1,10 @@
 import "./App.css";
-import { Bienvenido } from "./Componentes/Bienvenido";
+import { AgregarTransaccion } from "./Componentes/Agregar_transacción";
 
 function App() {
   return (
     <div className="App">
-      <Bienvenido></Bienvenido>
+      <AgregarTransaccion></AgregarTransaccion>
     </div>
   );
 }
