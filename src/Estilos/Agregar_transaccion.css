@@ -13,7 +13,7 @@
   left: 26px;
   top: 182px;
   position: absolute;
-  background: #ffffff;
+  background: #cdf5f1;
   border-radius: 40px;
 }
 
@@ -174,7 +174,7 @@
 
 /* Rectangle 7 */
 .tran1 {
-  width: 170px;
+  width: 160px;
   height: 20px;
   left: 195px;
   top: 314px;
@@ -185,7 +185,7 @@
 
 /* Rectangle 8 */
 .tran2 {
-  width: 170px;
+  width: 160px;
   height: 20px;
   left: 195px;
   top: 396px;
@@ -196,7 +196,7 @@
 
 /* Rectangle 9 */
 .tran3 {
-  width: 170px;
+  width: 160px;
   height: 20px;
   left: 195px;
   top: 478px;
@@ -207,7 +207,7 @@
 
 /* Rectangle 10 */
 .tran4 {
-  width: 170px;
+  width: 160px;
   height: 20px;
   left: 198px;
   top: 565px;
@@ -218,7 +218,7 @@
 
 /* Rectangle 11 */
 .tran5 {
-  width: 170px;
+  width: 160px;
   height: 20px;
   left: 198px;
   top: 635px;
