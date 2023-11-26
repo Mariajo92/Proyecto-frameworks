@@ -1,9 +1,29 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
 import "../Estilos/creasr_cuenta.css";
-import { formulario } from "../captureData/crearCuenta.js";
+import { data } from "../Data/datos";
 
 export const CrearCuenta = () => {
+  const [datos, setDatos] = useState({ datos: data.usuario });
+  const [form, setForm] = useState({
+    id: "",
+    nombre: "",
+    apellido: "",
+    usuario: "",
+    password: "",
+    confirmar: "",
+    celular: "",
+  });
+
+  function insertarDatos() {
+    var valorNuevo = form;
+    valorNuevo.id = datos.length + 1;
+    var lista = datos;
+    lista.push(valorNuevo);
+    setDatos(lista);
+
+    console.log(datos);
+  }
+
   return (
     <div className="crear_cuenta">
       <div className="bgcp">
@@ -22,6 +42,7 @@ export const CrearCuenta = () => {
           <input
             type="text"
             className="nombre"
+            name="nombre"
             placeholder="Nombre"
             id="nombre"
             required
@@ -32,6 +53,7 @@ export const CrearCuenta = () => {
           <input
             type="text"
             className="apellido"
+            name="apellido"
             placeholder="Apellido"
             id="apellido"
             required
@@ -42,6 +64,7 @@ export const CrearCuenta = () => {
           <input
             type="text"
             className="usuario"
+            name="usuario"
             placeholder="Usuario"
             id="usuario"
             required
@@ -52,6 +75,7 @@ export const CrearCuenta = () => {
           <input
             type="password"
             className="clave"
+            name="password"
             placeholder="Contraseña"
             id="password"
             required
@@ -72,12 +96,14 @@ export const CrearCuenta = () => {
           <input
             type="text"
             className="celular"
+            name="celular"
             id="celular"
             placeholder="Celular"
+            required
           />
         </div>
         <div className="btnc">
-          <button type="sumit" onClick={formulario} className="rectangulo1c">
+          <button type="sumit" onClick={insertarDatos} className="rectangulo1c">
             Crear
           </button>
         </div>
