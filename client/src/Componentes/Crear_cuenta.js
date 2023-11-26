@@ -18,8 +18,7 @@ export const CrearCuenta = () => {
     var valorNuevo = form;
     valorNuevo.id = datos.length + 1;
     var lista = datos;
-    lista.push(valorNuevo);
-    setDatos(lista);
+    lista.setDatos(...valorNuevo);
 
     console.log(datos);
   }
