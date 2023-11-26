@@ -43,7 +43,6 @@
 }
 .btn:hover {
   opacity: 1;
-  color: #ffffff;
   cursor: pointer;
 }
 
@@ -56,6 +55,12 @@
   position: absolute;
   background: #00e530;
   border-radius: 40px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 /*login */
@@ -65,12 +70,6 @@
   left: 50px;
   top: 11px;
   position: absolute;
-  text-align: center;
-  color: white;
-  font-size: 18px;
-  font-family: Nunito;
-  font-weight: 700;
-  word-wrap: break-word;
 }
 /* crear cuenta */
 .crearcuenta {

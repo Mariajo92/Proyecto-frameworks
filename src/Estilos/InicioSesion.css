@@ -1,0 +1,187 @@
+/* inicio sesión  */
+.inicio_sesion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background: #f5f5f8;
+}
+
+/* bg */
+.bgcp {
+  position: absolute;
+  width: 591px;
+  height: 634px;
+  left: -112px;
+  top: -229px;
+}
+
+/* Ellipse 1 */
+.elipse {
+  width: 591px;
+  height: 634px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #d9d9d9;
+  border-radius: 9999px;
+}
+/* bg */
+.bgc {
+  width: 437px;
+  height: 844px;
+  left: 78px;
+  top: -168px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 229, 48, 0.5) 0%, #f4f8f5 100%),
+    url(../Imagenes/plantilla2.png);
+}
+/* APP Registro de gastos */
+.appgastos {
+  width: 285px;
+  height: 70px;
+  left: 41px;
+  top: 41px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-family: Nunito;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* Rectangle 2 */
+.rectang1 {
+  width: 338px;
+  height: 528px;
+  left: 26px;
+  top: 300px;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+}
+
+/* Bienvenido */
+.bienvl {
+  width: 217px;
+  height: 29px;
+  left: 75px;
+  top: 338px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: Nunito;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* input */
+.inp1 {
+  width: 330px;
+  height: 36px;
+  left: 30px;
+  top: 471px;
+  position: absolute;
+}
+
+/* Line 1 */
+.lin1 {
+  width: 252.01px;
+  height: 0px;
+  left: 30px;
+  top: 26px;
+  position: absolute;
+  border: 1px #2a2a31 solid;
+}
+
+/* Usuario */
+.usua {
+  width: 252px;
+  height: 20px;
+  left: 30px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: rgba(204, 204, 204, 0.8);
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  word-wrap: break-word;
+  border: none;
+}
+
+/* input */
+.inp2 {
+  width: 330px;
+  height: 36px;
+  left: 30px;
+  top: 572px;
+  position: absolute;
+}
+
+/* Line 1 */
+.lin2 {
+  width: 252.01px;
+  height: 0px;
+  left: 30px;
+  top: 26px;
+  position: absolute;
+  border: 1px #2a2a31 solid;
+}
+/* Clave */
+.clavecc {
+  width: 252px;
+  height: 20px;
+  left: 30px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: #cccccc;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  word-wrap: break-word;
+  border: none;
+}
+
+/* btn */
+.btnl {
+  width: 308px;
+  height: 120px;
+  left: 46px;
+  top: 684px;
+  position: absolute;
+}
+
+/* Rectangle 1 */
+.rectang2 {
+  width: 308px;
+  height: 58px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #00e530;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+/* crear cuenta */
+.crearl {
+  width: 230px;
+  height: 54px;
+  left: 28px;
+  top: 66px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  text-decoration: underline;
+  word-wrap: break-word;
+}

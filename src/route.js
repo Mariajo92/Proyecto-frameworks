@@ -5,7 +5,8 @@ const app = express();
 app.use(express.json());
 //routes
 app.use("/", bienvenido);
+app.use("/", require("./routes/crearCuenta.js"));
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(5000, () => {
+  console.log("Server is running on port 5000");
 });

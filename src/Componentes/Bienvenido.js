@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Estilos/bienvenido.css";
 
 export const Bienvenido = () => {
@@ -9,10 +10,14 @@ export const Bienvenido = () => {
         Registro de gastos
       </div>
       <div className="btn">
-        <div className="rectangle"></div>
-        <div className="login">Log in </div>
+        <button className="rectangle">
+          <Link className="login" to="/Inicio-Sesion"></Link>
+          Ingresar
+        </button>
       </div>
-      <div className="crearcuenta">crear cuenta </div>
+      <Link className="crearcuenta" to="/Crear-Cuenta">
+        Crear Cuenta
+      </Link>
     </div>
   );
 };

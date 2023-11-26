@@ -61,6 +61,7 @@
   background: white;
   border-radius: 40px;
 }
+
 /* Bienvenidos a APP registro de gastos */
 .bapp {
   width: 217px;
@@ -78,42 +79,43 @@
 
 /* input 1 */
 .input1 {
-  width: 306px;
+  width: 330px;
   height: 36px;
-  left: 12px;
+  left: 30px;
   top: 412px;
   position: absolute;
 }
 
 /* Line 1 */
 .line1 {
-  width: 252.01px;
+  width: 252px;
   height: 0px;
-  left: 54px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
 }
 /* Nombre */
 .nombre {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+  width: 252.01px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
+  text-align: start;
 }
 
 /* input 2*/
 .input2 {
-  width: 306px;
+  width: 330px;
   height: 36px;
-  left: 12px;
+  left: 30px;
   top: 457px;
   position: absolute;
 }
@@ -122,7 +124,7 @@
 .line2 {
   width: 252.01px;
   height: 0px;
-  left: 54px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
@@ -130,24 +132,25 @@
 
 /* Apellido */
 .apellido {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+  width: 252px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  text-align: start;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
 }
 
 /* input 3*/
 .input3 {
-  width: 306px;
+  width: 330px;
   height: 36px;
-  left: 12px;
+  left: 30px;
   top: 502px;
   position: absolute;
 }
@@ -155,32 +158,33 @@
 .line3 {
   width: 252.01px;
   height: 0px;
-  left: 54px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
 }
 
-/* Correo */
-.correo {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+/* Usuario */
+.usuario {
+  width: 252px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  text-align: start;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
 }
 
 /* input 4*/
 .input4 {
-  width: 297px;
+  width: 330px;
   height: 36px;
-  left: 21px;
+  left: 30px;
   top: 546px;
   position: absolute;
 }
@@ -189,32 +193,33 @@
 .line4 {
   width: 252.01px;
   height: 0px;
-  left: 45px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
 }
 
-/* Password */
-.password {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+/* Contraseña */
+.clave {
+  width: 252px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  text-align: start;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
 }
 
 /* input 5*/
 .input5 {
-  width: 252px;
+  width: 330px;
   height: 36px;
-  left: 66px;
+  left: 30px;
   top: 586px;
   position: absolute;
 }
@@ -223,31 +228,32 @@
 .line5 {
   width: 252.01px;
   height: 0px;
-  left: 0px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
 }
-/* Confirmar Password */
-.confirmarpass {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+/* Confirmar Contraseña */
+.confirmar {
+  width: 252px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  text-align: start;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
 }
 
 /* input 6 */
 .input6 {
-  width: 306px;
+  width: 330px;
   height: 36px;
-  left: 12px;
+  left: 30px;
   top: 622px;
   position: absolute;
 }
@@ -256,7 +262,7 @@
 .line6 {
   width: 252.01px;
   height: 0px;
-  left: 54px;
+  left: 30px;
   top: 26px;
   position: absolute;
   border: 1px #2a2a31 solid;
@@ -264,17 +270,18 @@
 
 /* Celular */
 .celular {
-  width: 172px;
-  height: 36px;
-  left: 0px;
+  width: 252px;
+  height: 20px;
+  left: 30px;
   top: 0px;
   position: absolute;
-  text-align: center;
-  color: #cccccc;
+  text-align: start;
+  color: black;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
   word-wrap: break-word;
+  border: none;
 }
 /* btn */
 .btnc {
@@ -294,19 +301,8 @@
   position: absolute;
   background: #00e530;
   border-radius: 40px;
-}
-
-/* Crear */
-.crear {
-  width: 208px;
-  height: 58px;
-  left: 50px;
-  top: 18px;
-  position: absolute;
-  text-align: center;
   color: white;
   font-size: 18px;
   font-family: Nunito;
   font-weight: 700;
-  word-wrap: break-word;
 }
