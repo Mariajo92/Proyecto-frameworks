@@ -1,13 +1,31 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../Estilos/informe.css";
+import axios from "axios";
 
 export const Informe = () => {
   const [selectedOption, setSelectedOption] = useState("");
+  JSON.stringify({ selectedOption });
+  const [datos, setDatos] = useState([]);
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const obtenerGastos = async () => {
+    const response = await axios.get(
+      `http://localhost:5000/tabla${
+        selectedOption ? `?categoria=${selectedOption}` : ""
+      }`
+    );
+    const data = response.data;
+    setDatos(data);
+    alert("Datos recibidos");
+  };
+
+  const selecctor = selectedOption !== "";
+
   return (
     <div className="informe">
       <div className="rectanguloin2"></div>
@@ -26,19 +44,45 @@ export const Informe = () => {
         value={selectedOption}
         className="rectanguloinf7"
         onChange={handleChange}
+        required
       >
         <option value="">-- Selecciona --</option>
         <option value="Categoria A">Categoria A</option>
         <option value="Categoria B">Categoria B</option>
         <option value="Categoria C">Categoria C</option>
       </select>
-      <div className="btntran">
-        <div className="rectangulotran"></div>
-        <div className="agrgartran">Buscar</div>
+      <table className="tabla">
+        <thead>
+          <tr>
+            <th>Id </th>
+            <th>Nombre</th>
+            <th>Valor</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          {datos.map((item) => (
+            <tr>
+              <td>{item.id}</td>
+              <td>{item.nombre}</td>
+              <td>{item.valor}</td>
+              <td>{item.agregado}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="btnbus">
+        <button
+          disabled={!selecctor}
+          onClick={obtenerGastos}
+          className="rectanguloin1"
+        >
+          Buscar
+        </button>
       </div>
-      <div className="frametran">
-        <div className="imagetran"></div>
-      </div>
+      <button className="frameinf">
+        <Link to="/Inicio" className="imageinf"></Link>
+      </button>
     </div>
   );
 };

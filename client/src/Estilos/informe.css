@@ -114,95 +114,59 @@
   background: #ffffff;
   border: 3px solid #000000;
 }
-
-/* btn */
-.btninf {
+/*Tabla*/
+.tabla {
   position: absolute;
   width: 308px;
   height: 59px;
   left: 41px;
+  top: 410px;
+}
+/* btn */
+.btnbus {
+  width: 308px;
+  height: 59px;
+  left: 41px;
   top: 717px;
+  position: absolute;
 }
 
 /* Rectangle 1 */
 .rectanguloin1 {
-  position: absolute;
   width: 308px;
   height: 58px;
-  left: calc(50% - 308px / 2);
-  top: 717px;
-
+  left: 0px;
+  top: 0px;
+  position: absolute;
   background: #00e530;
   border-radius: 40px;
-}
-
-/* Buscar */
-.buscarinf {
-  position: absolute;
-  width: 208px;
-  height: 48px;
-  left: calc(50% - 208px / 2);
-  top: 728px;
-
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
+  text-align: center;
+  color: white;
   font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-
-  color: #ffffff;
-}
-
-/* chevron-down-circle-sharp */
-.circleinf {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 249px;
-  top: 359px;
-}
-
-/* Vector */
-.vectorinf {
-  position: absolute;
-  left: 9.38%;
-  right: 9.38%;
-  top: 9.38%;
-  bottom: 9.38%;
-
-  background: #000000;
-}
-
-/* selccione */
-.seleccion {
-  position: absolute;
-  width: 128px;
-  height: 28px;
-  left: 96px;
-  top: 376px;
-
-  font-family: "Nunito";
-  font-style: normal;
+  font-family: Nunito;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-
-  color: #000000;
+  word-wrap: break-word;
+  opacity: 0.7;
+}
+.rectanguloin1:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-/* Frame 13 */
-.frameinf13 {
-  position: absolute;
+.frameinf {
   width: 50px;
   height: 69px;
-  left: 318px;
+  padding-top: 21px;
+  padding-bottom: 8.48px;
+  left: 301px;
   top: 19px;
-
+  position: absolute;
   background: #f5f5f8;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
 }
-
 /* image 2 */
 .imageinf {
   position: absolute;

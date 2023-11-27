@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Routes>
         <Route path="/" Component={Bienvenido} />
         <Route path="/Inicio" Component={Menu} />

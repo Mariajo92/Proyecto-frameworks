@@ -306,3 +306,22 @@
   font-family: Nunito;
   font-weight: 700;
 }
+.crearcue {
+  width: 230px;
+  height: 54px;
+  left: 80px;
+  top: 760px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-family: Nunito;
+  font-weight: 700;
+  text-decoration: underline;
+  word-wrap: break-word;
+  opacity: 0.5;
+}
+.crearcue:hover {
+  cursor: pointer;
+  opacity: 1;
+}
