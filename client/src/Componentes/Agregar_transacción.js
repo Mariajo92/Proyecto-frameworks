@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import "../Estilos/Agregar_transaccion.css";
 import axios from "axios";
 
@@ -14,6 +13,12 @@ export const AgregarTransaccion = () => {
   });
 
   JSON.stringify({ datos });
+
+  const [divActivado, setDivActivado] = useState(false);
+
+  const activarDiv = () => {
+    setDivActivado(!divActivado);
+  };
 
   const handleInputChange = (event) => {
     setDatos({
@@ -60,9 +65,15 @@ export const AgregarTransaccion = () => {
       <div className="categoriatrn">Categoria </div>
       <div className="infotran">Información adicional</div>
       <div className="componentran">
-        <div className="autotrans">
+        <button onClick={activarDiv} className="autotrans">
           <div className="vectortran"></div>
-        </div>
+        </button>
+        {divActivado && (
+          <div className="pruebatrans">
+            <Link to="/Informe">Informe</Link>
+            <Link to="/">Salir</Link>
+          </div>
+        )}
       </div>
       <input
         type="text"

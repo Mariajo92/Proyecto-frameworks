@@ -73,6 +73,12 @@
   opacity: 1;
   cursor: pointer;
 }
+.pruebamenu {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Bienvenidos */
 .bienvenidosm {

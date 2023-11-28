@@ -165,6 +165,13 @@
   background: black;
   background: url(../Imagenes/Vector.png);
 }
+
+.pruebatrans {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
 /* Inside auto layout */
 .autolatran {
   flex: none;

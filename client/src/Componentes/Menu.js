@@ -1,8 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Estilos/menu.css";
 
 export const Menu = () => {
+  const [divActivado, setDivActivado] = useState(false);
+
+  const activarDiv = () => {
+    setDivActivado(!divActivado);
+  };
+
   return (
     <div className="menu">
       <div className="appm">
@@ -11,9 +17,16 @@ export const Menu = () => {
       </div>
       <div className="bgm"></div>
       <div className="autolayautm">
-        <div className="autolayoutm1">
+        <button onClick={activarDiv} className="autolayoutm1">
           <div className="vectorm"></div>
-        </div>
+        </button>
+        {divActivado && (
+          <div className="pruebamenu">
+            <Link to="/Agregar-Transaccion">Agregar Gasto</Link>
+            <Link to="/Informe">Informe</Link>
+            <Link to="/">Salir</Link>
+          </div>
+        )}
       </div>
       <div className="bienvenidosm">Bienvenidos</div>
     </div>

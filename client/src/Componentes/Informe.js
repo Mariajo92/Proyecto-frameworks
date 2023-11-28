@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import "../Estilos/informe.css";
 import axios from "axios";
 
@@ -8,6 +7,7 @@ export const Informe = () => {
   const [selectedOption, setSelectedOption] = useState("");
   JSON.stringify({ selectedOption });
   const [datos, setDatos] = useState([]);
+  const [divActivado, setDivActivado] = useState(false);
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
@@ -26,6 +26,10 @@ export const Informe = () => {
 
   const selecctor = selectedOption !== "";
 
+  const activarDiv = () => {
+    setDivActivado(!divActivado);
+  };
+
   return (
     <div className="informe">
       <div className="rectanguloin2"></div>
@@ -36,10 +40,17 @@ export const Informe = () => {
       <div className="informe2">Informe</div>
       <div className="cateinf">Categoria</div>
       <div className="component2inf">
-        <div className="menuinf">
+        <button onClick={activarDiv} className="menuinf">
           <div className="vectorin"></div>
-        </div>
+        </button>
+        {divActivado && (
+          <div className="prueba">
+            <Link to="/Agregar-Transaccion">Agregar Gasto</Link>
+            <Link to="/">Salir</Link>
+          </div>
+        )}
       </div>
+
       <select
         value={selectedOption}
         className="rectanguloinf7"
