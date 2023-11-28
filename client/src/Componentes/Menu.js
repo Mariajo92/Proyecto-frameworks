@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Estilos/menu.css";
 
 export const Menu = () => {
@@ -8,6 +8,10 @@ export const Menu = () => {
   const activarDiv = () => {
     setDivActivado(!divActivado);
   };
+
+  const location = useLocation();
+  const { search } = location;
+  const userId = new URLSearchParams(search).get("userId");
 
   return (
     <div className="menu">
@@ -22,8 +26,14 @@ export const Menu = () => {
         </button>
         {divActivado && (
           <div className="pruebamenu">
-            <Link to="/Agregar-Transaccion">Agregar Gasto</Link>
-            <Link to="/Informe">Informe</Link>
+            <Link
+              to={`/Agregar-Transaccion${userId ? `?userId=${userId}` : ""}`}
+            >
+              Agregar Gasto
+            </Link>
+            <Link to={`/Informe${userId ? `?userId=${userId}` : ""}`}>
+              Informe
+            </Link>
             <Link to="/">Salir</Link>
           </div>
         )}

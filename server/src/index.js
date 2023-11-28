@@ -48,10 +48,10 @@ app.post("/crear", (req, res) => {
 });
 
 app.post("/gasto", (req, res) => {
-  const { id, nombre, valor, categoria, descripcion } = req.body;
+  const { id, nombre, valor, categoria, descripcion, id_usuario } = req.body;
   db.query(
-    `INSERT INTO gastos (id, nombre, valor, categoría, descripción, agregado, id_usuario) VALUES (?, ?, ?, ?, ?, (NOW()),19)`,
-    [id, nombre, valor, categoria, descripcion],
+    `INSERT INTO gastos (id, nombre, valor, categoría, descripción, agregado, id_usuario) VALUES (?, ?, ?, ?, ?, (NOW()),?)`,
+    [id, nombre, valor, categoria, descripcion, id_usuario],
     (err, result) => {
       if (err) {
         console.log(err);
@@ -63,10 +63,10 @@ app.post("/gasto", (req, res) => {
 });
 
 app.get("/tabla", (req, res) => {
-  const { categoria } = req.query;
+  const { categoria, userId } = req.query;
   db.query(
-    "SELECT id, nombre, valor, agregado FROM gastos WHERE categoría = ?",
-    [categoria],
+    "SELECT id, nombre, valor, agregado FROM gastos WHERE categoría = ? AND id_usuario = ?",
+    [categoria, userId],
     (err, result) => {
       if (err) {
         console.log(err);

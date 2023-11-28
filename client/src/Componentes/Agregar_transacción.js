@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Estilos/Agregar_transaccion.css";
 import axios from "axios";
 
@@ -10,6 +10,7 @@ export const AgregarTransaccion = () => {
     valor: 0,
     categoria: "",
     descripcion: "",
+    id_usuario: 0,
   });
 
   JSON.stringify({ datos });
@@ -19,11 +20,15 @@ export const AgregarTransaccion = () => {
   const activarDiv = () => {
     setDivActivado(!divActivado);
   };
+  const location = useLocation();
+  const { search } = location;
+  const userId = new URLSearchParams(search).get("userId");
 
   const handleInputChange = (event) => {
     setDatos({
       ...datos,
       [event.target.name]: event.target.value,
+      id_usuario: userId,
     });
   };
 
@@ -70,7 +75,9 @@ export const AgregarTransaccion = () => {
         </button>
         {divActivado && (
           <div className="pruebatrans">
-            <Link to="/Informe">Informe</Link>
+            <Link to={`/Informe${userId ? `?userId=${userId}` : ""}`}>
+              Informe
+            </Link>
             <Link to="/">Salir</Link>
           </div>
         )}
@@ -125,7 +132,10 @@ export const AgregarTransaccion = () => {
         </button>
       </div>
       <button className="frametran">
-        <Link to="/Inicio" className="imagetran"></Link>
+        <Link
+          to={`/Inicio${userId ? `?userId=${userId}` : ""}`}
+          className="imagetran"
+        ></Link>
       </button>
     </div>
   );

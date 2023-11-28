@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Estilos/informe.css";
 import axios from "axios";
 
@@ -17,7 +17,7 @@ export const Informe = () => {
     const response = await axios.get(
       `http://localhost:5000/tabla${
         selectedOption ? `?categoria=${selectedOption}` : ""
-      }`
+      }${userId ? `&userId=${userId}` : ""}`
     );
     const data = response.data;
     setDatos(data);
@@ -29,6 +29,10 @@ export const Informe = () => {
   const activarDiv = () => {
     setDivActivado(!divActivado);
   };
+
+  const location = useLocation();
+  const { search } = location;
+  const userId = new URLSearchParams(search).get("userId");
 
   return (
     <div className="informe">
@@ -45,7 +49,11 @@ export const Informe = () => {
         </button>
         {divActivado && (
           <div className="prueba">
-            <Link to="/Agregar-Transaccion">Agregar Gasto</Link>
+            <Link
+              to={`/Agregar-Transaccion${userId ? `?userId=${userId}` : ""}`}
+            >
+              Agregar Gasto
+            </Link>
             <Link to="/">Salir</Link>
           </div>
         )}
@@ -92,7 +100,10 @@ export const Informe = () => {
         </button>
       </div>
       <button className="frameinf">
-        <Link to="/Inicio" className="imageinf"></Link>
+        <Link
+          to={`/Inicio${userId ? `?userId=${userId}` : ""}`}
+          className="imageinf"
+        ></Link>
       </button>
     </div>
   );
